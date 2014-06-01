@@ -1,4 +1,6 @@
 backup.zip contains a backup of the filesystem (see cross/)
+the contained files are listed in files.txt
 
 The actions-firmware-extract utility is made by Antonio Ospite <ao2@ao2.it>.
 We'd like to thank him for the insights he gave us into the Actions-Micro hardware devices.
+It can be found at http://git.ao2.it/actions-micro-tools.git/
