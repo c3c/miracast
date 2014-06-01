@@ -1,0 +1,6 @@
+backup.zip contains a backup of the filesystem made using the netcat command:
+<server> netcat -l 0.0.0.0 3301 | dd of=mem.`date +%Y%m%d_%H%M%S`
+<miracast> dd if=/dev/mem | ./netcat 192.168.203.66 3301 
+
+The actions-firmware-extract utility is made by Antonio Ospite <ao2@ao2.it>.
+We'd like to thank him for the insights he gave us into the Actions-Micro hardware devices.

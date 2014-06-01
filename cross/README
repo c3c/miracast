@@ -1,0 +1,18 @@
+This directory contains cross-compiled binaries for MIPS32 LE (mipsel).
+
+netcat compile flags:
+	make CC=mipsel-linux-gnu-gcc CFLAGS="-static -DGAPING_SECURITY_HOLE" 
+
+zip compile flags:
+	make -f unix/Makefile generic CC=mipsel-linux-gnu-gcc
+
+
+There's no tar command, but we provide a zip binary instead. 
+You can use it as follows to create a backup of the current rootfs:
+	
+1. Use curl on the device to get the netcat and zip binaries onto the device. 
+   You'll have to set up a local webserver for that. 
+   cd /tmp ; curl -o zip http://192.168.203.20/zip ; curl -o netcat http://192.168.203.20/netcat
+2. Use the xcompiled binaries to transfer to a netcat listener that outputs to a .zip file
+   netcat -l 0.0.0.0 5353 > backup.zip # server
+   find / \( -path /proc -o -path /sys -o -path /dev \) -prune -o -type f | /tmp/zip -@ -0 - | /tmp/netcat 192.168.203.20 5353 # miracast
