@@ -25,11 +25,6 @@ that information with absolute timestamps is logged on the device. It
 suggests that information, including wireless access points and MAC
 addresses, is logged.
 
-The Chromecast makes it diﬃcult to obtain the NAND memory by
-encrypting the contents with a unique per device key. Attempts to
-retrieve this memory failed. However, contents of crash logs show
-that information with absolute timestamps is logged on the device. It
-suggests that information, including wireless access points and MAC
-addresses, is logged.
+The Miracast dongle researched during this project, the Measy A2W, runs the EZCast ﬁrmware. EZCast contains multiple software vulner- abilities that may lead to shell access on similar devices. However, the method used to access the memory and ﬂash on the Measy A2W was via the UART interface. A memory dump could then be retrieved over the network using netcat or via UART using hexdump. The memory of the Miracast contained information including partial images, links of visited websites, and MAC addresses of nearby and connected devices.
 
 **[View paper](https://github.com/c3c/miracast/blob/master/deliverables/paper.pdf?raw=true)**
