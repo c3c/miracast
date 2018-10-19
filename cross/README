@@ -3,7 +3,7 @@ This directory contains cross-compiled binaries for MIPS32 LE (mipsel).
 netcat compile flags:
 	make CC=mipsel-linux-gnu-gcc CFLAGS="-static -DGAPING_SECURITY_HOLE" 
 
-zip compile flags:
+Zip compile flags:
 	make -f unix/Makefile generic CC=mipsel-linux-gnu-gcc
 
 
