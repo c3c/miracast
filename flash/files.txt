@@ -1,4 +1,4 @@
-/am7x/
+/am7x/.
 /am7x/sdk/
 /am7x/sdk/standby.bin
 /am7x/sdk/chpll.bin
