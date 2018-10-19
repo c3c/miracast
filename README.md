@@ -4,7 +4,7 @@ Analyzing Chromecast & Miracast devices.
 Tools for analyzing EZCast / Miracast devices, as part of a project paper.
 
 This repository contains 
-  - some xcompiled tools (gdb, netcat) that can be used on mipsel devices such as the Measy A2W (trust us, we didn't backdoor them)
+  - Some xcompiled tools (gdb, netcat) that can be used on mipsel devices such as the Measy A2W (trust us, we didn't backdoor them)
   - a backup of the NAND flash as found on the Measy A2W, potentially containing some helpful kernel modules that may assist in the reverse engineering of some of the underlying USB protocols (all am7x am8x based)
   - a tool by Antonio Ospite to extract firmware details for Actions-Micro devices
 
